@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SpeakEasy — AI Voice Agent</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-icon">◉</div>
+        <div>
+          <div class="brand-name">SpeakEasy</div>
+          <div class="brand-sub">AI Voice Agent</div>
+        </div>
+      </div>
+      <div class="status-wrap">
+        <span id="statusDot" class="dot"></span>
+        <span id="statusText">Disconnected</span>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="hero">
+        <div class="eyebrow">REAL-TIME VOICE AI</div>
+        <h1>Talk naturally.<br><span>Get things done.</span></h1>
+        <p>SpeakEasy understands natural voice commands and can call tools when action is needed.</p>
+      </section>
+
+      <section class="card">
+        <div class="card-head">
+          <div>
+            <div class="section-title">Conversation</div>
+            <div id="langBadge" class="badge">English</div>
+          </div>
+          <button id="clearBtn" class="small-btn">Clear</button>
+        </div>
+
+        <div id="chat" class="chat">
+          <div class="empty">
+            <div class="empty-icon">◉</div>
+            <div>Click Start and begin speaking</div>
+            <small>Headphones are recommended.</small>
+          </div>
+        </div>
+
+        <div class="controls">
+          <button id="startBtn" class="mic-btn">
+            <span id="micIcon">🎙</span>
+            <span id="micLabel">Start conversation</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="tools-card">
+        <div class="section-title">Available tools</div>
+        <div id="toolState" class="tool-row">
+          <div class="tool-icon">⚙</div>
+          <div>
+            <strong>Fan control</strong>
+            <div id="fanState">Ready — OFF</div>
+          </div>
+          <div id="toolPill" class="tool-pill">READY</div>
+        </div>
+      </section>
+    </main>
+
+    <footer>SpeakEasy • AssemblyAI Voice Agent API</footer>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>

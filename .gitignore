@@ -1,0 +1,13 @@
+.env
+venv/
+__pycache__/
+*.pyc
+
+*.zip
+*.wav
+
+transcript.txt
+
+test_*.py
+agent_gemini_tts.py
+transcribe.py

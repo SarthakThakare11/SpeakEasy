@@ -1,0 +1,19 @@
+*{box-sizing:border-box}
+:root{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#e8eef8;background:#07101d}
+body{margin:0;min-height:100vh;background:radial-gradient(circle at 50% -20%,#17345a 0,#07101d 48%,#050b13 100%)}
+button{font:inherit}
+.app{min-height:100vh;display:flex;flex-direction:column}
+.topbar{height:72px;border-bottom:1px solid #203047;background:rgba(7,16,29,.78);backdrop-filter:blur(14px);display:flex;align-items:center;justify-content:space-between;padding:0 7vw}
+.brand{display:flex;align-items:center;gap:12px}.brand-icon{width:38px;height:38px;border-radius:12px;display:grid;place-items:center;background:#3b82f6;color:white;font-size:21px;box-shadow:0 8px 30px #2563eb44}
+.brand-name{font-weight:750;font-size:17px}.brand-sub{font-size:11px;color:#8190a7;letter-spacing:.08em;text-transform:uppercase}
+.status-wrap{display:flex;align-items:center;gap:8px;color:#91a0b6;font-size:13px}.dot{width:9px;height:9px;border-radius:50%;background:#64748b}.dot.live{background:#22c55e;box-shadow:0 0 12px #22c55e}
+.main{width:min(900px,92vw);margin:0 auto;padding:64px 0 30px;flex:1}
+.hero{text-align:center;margin-bottom:34px}.eyebrow{font-size:11px;letter-spacing:.2em;color:#60a5fa;font-weight:750;margin-bottom:13px}.hero h1{font-size:clamp(38px,6vw,62px);line-height:1.02;margin:0 0 16px;letter-spacing:-.045em}.hero h1 span{color:#7db6ff}.hero p{color:#8fa0b7;max-width:620px;margin:0 auto;line-height:1.6}
+.card,.tools-card{border:1px solid #213149;background:rgba(13,27,46,.78);box-shadow:0 25px 80px #00000045;border-radius:22px}.card{overflow:hidden}.card-head{padding:20px 24px;border-bottom:1px solid #213149;display:flex;align-items:center;justify-content:space-between}.section-title{font-weight:700}.badge{display:inline-block;margin-top:6px;font-size:11px;color:#7dd3fc;background:#0c3148;border:1px solid #164e68;border-radius:99px;padding:4px 9px}
+.small-btn{background:transparent;color:#8fa0b7;border:1px solid #2a3b52;border-radius:9px;padding:7px 11px;cursor:pointer}.small-btn:hover{color:#fff;border-color:#55708f}
+.chat{height:360px;overflow:auto;padding:24px;display:flex;flex-direction:column;gap:13px}.empty{height:100%;display:grid;place-items:center;align-content:center;color:#718198;text-align:center;gap:7px}.empty-icon{font-size:34px;color:#4f82bd}.empty small{color:#52637a}
+.msg{max-width:78%;padding:12px 15px;border-radius:15px;line-height:1.5;white-space:pre-wrap}.msg.user{align-self:flex-end;background:#2563eb;color:white;border-bottom-right-radius:5px}.msg.agent{align-self:flex-start;background:#1a2b40;color:#dce8f6;border-bottom-left-radius:5px}.msg-label{font-size:10px;text-transform:uppercase;letter-spacing:.1em;opacity:.58;margin-bottom:4px}
+.controls{border-top:1px solid #213149;padding:23px;display:flex;justify-content:center}.mic-btn{min-width:230px;border:0;border-radius:14px;padding:14px 20px;background:#2563eb;color:white;font-weight:700;cursor:pointer;box-shadow:0 12px 35px #2563eb44;transition:.2s}.mic-btn:hover{transform:translateY(-1px);background:#327ff0}.mic-btn.stop{background:#dc2626;box-shadow:0 12px 35px #dc262644}
+.tools-card{margin-top:16px;padding:18px 20px}.tool-row{margin-top:13px;padding:13px 14px;border:1px solid #263951;border-radius:13px;display:flex;align-items:center;gap:12px}.tool-icon{width:36px;height:36px;border-radius:10px;background:#172a42;display:grid;place-items:center}.tool-row>div:nth-child(2){flex:1}.tool-row strong{font-size:14px}.tool-row #fanState{font-size:12px;color:#71839b;margin-top:2px}.tool-pill{font-size:10px;font-weight:800;letter-spacing:.08em;padding:5px 8px;border-radius:7px;background:#122d25;color:#4ade80}.tool-pill.on{background:#3b2b0d;color:#fbbf24}
+footer{text-align:center;padding:25px;color:#52637a;font-size:11px}
+@media(max-width:600px){.topbar{padding:0 4vw}.main{padding-top:38px}.chat{height:330px}.msg{max-width:90%}}
